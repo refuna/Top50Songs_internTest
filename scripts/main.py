@@ -1,4 +1,5 @@
-from datastream import read_csv_with_error_handling, Country
+from datastream import read_csv_with_error_handling
+from country import Country
 from get_top import get_top_songs_sort, get_top_songs_linear
 import joblib
 import datetime
