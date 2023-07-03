@@ -3,19 +3,19 @@ Objective
 ========================
 
 The objective of this exercise is to suggest a system that computes on a daily basis, the top 50 songs the most listened in each country on the last 7 days, as
-well as the top 50 songs (optional) the most listened by each user on the last 7 days.
+well as the top 50 songs the most listened by each user on the last 7 days.
 
 Project Organization
 -------------
     ├── data               <- Data from third party sources which contains sng_id, user_id and country ISO.
-    ├── records            <- joblib files with the data sorted by country and user.
+    ├── records            <- Joblib files storing data by country and user for each of the past 7 days.
     ├── outputs            <- top 50 songs in each country over past 7 days and top 50 songs by each user over past 7 days on the specified format.
     ├── scripts
           ├── country.py         <- The Country class represents a set of countries, each with a unique identifier.
           │                       The countries included in the enumeration are Germany(DE), Great Britain (GB), Netherlands (NL), and Belgium (BE).
           ├── datastream.py      <- Read a CSV file and yield each valid row as a tuple of (sng_id, user_id, country).
-          ├── get_top.py         <- Retrieve the top 50 songs for a given country using different algorithms.
-          ├── main.py            <- Get the top 50 songs in each country and top 50 songs by individual users over past 7 days.
+          ├── get_top.py         <- Retrieve the top 50 songs using different algorithms.
+          ├── main.py            <- Main script to get the top 50 songs in each country or by individual users over the past 7 days.
 
 -------
 
